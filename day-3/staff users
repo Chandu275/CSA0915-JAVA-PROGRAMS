@@ -1,0 +1,12 @@
+import java.util.*;
+public class staff {
+    public static void main(String[] args){
+        Scanner n=new Scanner(System.in);
+        int tusers=n.nextInt();
+        int susers=n.nextInt();
+        int  c=susers/3;
+        int  d=tusers-susers;
+        int students=d-c;
+        System.out.println("student users="+students);
+    }
+}

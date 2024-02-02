@@ -1,0 +1,12 @@
+import java.util.*;
+public class bitodecoc {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the binary number:");
+        String bin=input.nextLine();
+        int dec=Integer.parseInt(bin,2);
+        System.out.println("decimal number:"+dec);
+        String oct=Integer.toOctalString(dec);
+        System.out.println("octal number:"+oct);
+    }
+}

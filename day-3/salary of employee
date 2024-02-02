@@ -1,0 +1,34 @@
+import java.util.*;
+public class slararyemp {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the grade of the employee:");
+        char a=input.next().charAt(0);
+        System.out.println("enter the employee salary:");
+        int n=input.nextInt();
+        System.out.println("salary:"+n);
+        double bonus=0.0;
+        double total=0.0;
+        if(a=='A') {
+            bonus = n * 0.05;
+            total = n + bonus;
+            if (a < 10000) {
+                bonus = n * 0.02;
+                total = n + bonus;
+            }
+        }
+        else if(a=='B') {
+            bonus = n * 0.1;
+            total = n + bonus;
+            if (n < 10000) {
+                bonus = n * 0.02;
+                total = n + bonus;
+            }
+        }
+        else {
+            System.out.println("entered grade is invalid");
+        }
+        System.out.println("bonus:"+bonus);
+        System.out.println("total amount paid:"+total);
+    }
+}

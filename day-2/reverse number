@@ -1,0 +1,12 @@
+public class reversenum {
+    public static void main(String[] args){
+        int n1=1234;
+        int rem,sum=0;
+        while(n1>0){
+            rem=n1%10;
+            sum=sum*10+rem;
+            n1/=10;
+        }
+        System.out.println("reverse number="+sum);
+    }
+}
